@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="15dp"
+    android:background="#FFADAD"
+    app:cardBackgroundColor="#FFADAD"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/name_equi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="#5C5251"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_equi"
+            android:layout_width="197dp"
+            android:layout_height="96dp"
+            android:layout_below="@+id/name_equi"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="87dp"
+            android:layout_marginLeft="87dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginRight="78dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/description_equi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_equi"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:text="description"
+            android:textAlignment="center"
+            android:textColor="#5C5251"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/price_equi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description_equi"
+            android:gravity="center_horizontal"
+            android:text="price"
+            android:textAlignment="center"
+            android:textColor="#5C5251"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/dispo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price_equi"
+            android:gravity="center_horizontal"
+            android:text="disponible"
+            android:textAlignment="center"
+            android:textColor="#F81A04"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

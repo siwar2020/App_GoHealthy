@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#41F8BAB5"
+    tools:context=".Buy_an_equi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/allura"
+            android:gravity="center"
+            android:text="please write your shippement details"
+            android:textColor="#ED1717"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="your Name"
+            android:inputType="textPersonName"
+            android:theme="@style/Theme.GoHealthlyApplication" />
+
+        <EditText
+            android:id="@+id/Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint=" your phone number"
+            android:theme="@style/Theme.GoHealthlyApplication"/>
+
+        <EditText
+            android:id="@+id/homeaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Phone"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="your home address"
+            android:theme="@style/Theme.GoHealthlyApplication"/>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homeaddress"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="your city name"
+            android:theme="@style/Theme.GoHealthlyApplication"/>
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:fontFamily="sans-serif"
+            android:text="confirm"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#ED1717" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EquipementsDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#41F8BAB5">
+
+        <ImageView
+            android:id="@+id/image_details"
+            android:layout_width="match_parent"
+            android:layout_height="260dp" />
+
+        <TextView
+            android:id="@+id/name_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_details"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Equipement" />
+
+        <TextView
+            android:id="@+id/description_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_details"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="description" />
+
+        <TextView
+            android:id="@+id/prix_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description_details"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="price" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#ED1717" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

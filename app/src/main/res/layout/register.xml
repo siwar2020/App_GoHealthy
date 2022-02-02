@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    tools:ignore="ExtraText">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgoundapp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="185dp"
+                android:layout_height="67dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Here’s your first step with us ! "
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="77dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="33dp"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/join"
+                app:tint="@color/colorAccent" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="348dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="#00FFFDFD"
+            app:cardCornerRadius="10dp"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="60dp">
+
+                <ImageView
+                    android:id="@+id/username"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/user"
+                    app:tint="#F45656" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/username"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/username"
+                    android:hint="username"
+                    android:paddingLeft="30dp"
+                    android:textColorLink="@color/colorAccent"
+                    android:textCursorDrawable="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:theme="@style/Theme.GoHealthlyApplication" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="60dp">
+
+                <ImageView
+                    android:id="@+id/Email"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/mail"
+                    app:tint="#F45656" />
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/Email"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/Email"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="30dp"
+                    android:textColorLink="@color/colorAccent"
+                    android:textCursorDrawable="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:theme="@style/Theme.GoHealthlyApplication" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="60dp">
+
+                <ImageView
+                    android:id="@+id/password"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/lock"
+                    app:tint="#F45656" />
+
+                <EditText
+                    android:id="@+id/password_user"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/password"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/password"
+                    android:ems="10"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="30dp"
+                    android:textColorLink="@color/colorAccent"
+                    android:textCursorDrawable="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:theme="@style/Theme.GoHealthlyApplication" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginRight="60dp">
+
+                <ImageView
+                    android:id="@+id/im_phone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/icone_phone"
+                    app:tint="#F45656" />
+
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/im_phone"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/im_phone"
+                    android:ems="10"
+                    android:hint="phone"
+                    android:inputType="phone"
+                    android:paddingLeft="30dp"
+                    android:textColorLink="@color/colorAccent"
+                    android:textCursorDrawable="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:theme="@style/Theme.GoHealthlyApplication" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="80dp"
+                    android:background="@drawable/background_button"
+                    android:fontFamily="@font/radley"
+                    android:text="Register"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:backgroundTint="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Already a member ?"
+                    android:textColor="#2C2424"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Login"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

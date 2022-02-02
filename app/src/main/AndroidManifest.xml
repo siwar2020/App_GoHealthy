@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.gohealthlyapplication">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/go"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/go"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity android:name=".order_accept"></activity>
+        <activity android:name=".admin_confirm_order" />
+        <activity android:name=".Buy_an_equi" />
+        <activity android:name=".check_new_posts" />
+        <activity android:name=".admin_fonction" />
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".EquipementsDetails" />
+        <activity android:name=".ResetPassword" />
+        <activity android:name=".DonateActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+
+
+        <provider
+            android:name=".alarmreminder.data.AlarmReminderProvider"
+            android:authorities="com.example.gohealthlyapplication.alarmreminder"
+            android:exported="true" />
+
+        <activity
+            android:name=".alarmreminder.AddReminderActivity"
+            android:label="@string/title_activity_add_reminder"
+            android:parentActivityName=".alarmreminder.Activity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".alarmreminder.Activity" />
+        </activity>
+
+        <service
+            android:name=".alarmreminder.reminder.ReminderAlarmService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+
+        <activity android:name=".alarmreminder.Activity"></activity>
+
+
+    </application>
+
+</manifest>

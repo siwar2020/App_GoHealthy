@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/allura</item>
+        <item>@font/anton</item>
+        <item>@font/baloo</item>
+        <item>@font/chicle</item>
+        <item>@font/days_one</item>
+        <item>@font/radley</item>
+    </array>
+</resources>
